@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.0-alpha.3/vue.common.dev.min.js"></script>
+
+    <style>
+        .one{
+            color:orange;
+        }
+        .two{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Binding</h1>
+    <div id="app">
+       <a :href="address">Facebook</a>
+       <h1 :class="classes">learn sajedul</h1>
+       <input type="text" name="" id="" :value="name">
+    </div>
+    <script>
+        new Vue({
+        el:'#app',
+        data:{
+            name: 'Sajedul Islam khairul',
+            address: 'https://www.facebook.com',
+            classes : ['one','two'],
+            name: 'md khairul alom'
+             
+            
+        },
+        })
+    </script>
+</body>
+</html>
