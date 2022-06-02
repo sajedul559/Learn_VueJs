@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.0-alpha.3/vue.common.dev.min.js"></script>
+
+    
+</head>
+<body>
+    <div id="app">
+     
+   <p >looping</p>
+   <ol>
+       <li v-for="name in names">{{name}}</li>
+   </ol>
+   <ul>
+       <li v-for="(fruit, index) in fruits"> {{index}}.{{fruit.name}}|| {{fruit.color}} || {{fruit.weight}}</li>
+   </ul>
+   
+
+
+    </div>
+    <script>
+        new Vue({
+        el:'#app',
+        data:{
+            names:['sajedul','khairul','sojib','momen','hamid','hamim','mim'],
+            fruits:[
+                {name:'mango',color:'yellow',weight:12},               
+                {name:'orange',color:'red',weight:17},
+                {name:'banena',color:'green',weight:10},
+                {name:'lichu',color:'red',weight:20},
+                {name:'kathal',color:'orange',weight:32},
+
+
+            ]
+           
+           
+        }
+       
+         
+       
+
+        })
+
+</script>
+</body>
+</html>
