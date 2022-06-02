@@ -12,22 +12,31 @@
 <body>
     <div id="app">
      
-     <button @click.alt="Message">Click Me</button>
-     <button @click.shift="Message">Click Me</button>
+   <p v-if="name">learn sajedul</p>
+   <p v-else-if="age">25</p>
+   <button @click="Shoname">show name | {{name}}</button>
+   <button @click="Shoage">show age | {{age}}</button>
+
 
     </div>
     <script>
         new Vue({
         el:'#app',
         data:{
-            name:'',
+            name:true,
+            age:true
            
-        },        
+        },
         methods:{
-            Message(){
-                console.log('learn sajedul')
+            Shoname(){
+              this.name = !this.name
+            },
+            Shoage(){
+                this.age = !this.age
+
             }
-        }
+        }    
+       
 
         })
 
