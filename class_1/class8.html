@@ -7,26 +7,15 @@
     <title>Vue Js</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.0-alpha.3/vue.common.dev.min.js"></script>
 
-    <style>
-        .canvas{
-            height: 240px;
-            width: 240px;
-            margin-top: 20px;
-            background-color: orange;
-        }
-    </style>
+    
 </head>
 <body>
     <div id="app">
      
-     <h2>Keyboard Events</h2>
-     <label>Name:</label>
-     <input type="text" v-model="name">
-     <span>{{name}}</span>
-     <br><br>
-     <label >Age:</label>
-     <input type="text" v-model="age">
-     <span>{{age}}</span>
+     <button @click.alt="Message">Click Me</button>
+     <button @click.shift="Message">Click Me</button>
+
+     
 
 
     </div>
@@ -35,11 +24,12 @@
         el:'#app',
         data:{
             name:'',
-            age:''
-        },
-         
-        methods:{
            
+        },        
+        methods:{
+            Message(){
+                console.log('learn sajedul')
+            }
         }
 
         })
